@@ -1,0 +1,208 @@
+/* Make the background color of the body element white*/
+body {
+  background: white;
+  color: #122932;
+  font-size: 26px;
+  font-family: "Allerta Stencil", sans-serif;
+  }
+
+/* Center the text on the page*/
+*{padding: 0; margin: 0 auto;}
+  body{
+  text-align: center;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* Center the banner images on the page*/
+#bannerimages{
+  display: inline-flex;
+  justify-content: center;
+}
+
+#bannerimages img{
+  height: 650px;
+  width: 1200px;
+  display: grid;
+  margin: 0 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* This is the navigation bar, with details on background color (bright blue), active color (dark blue) and hovering color (light green)*/
+.topnav {
+  overflow: hidden;
+  background-color: #41BBD9;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.topnav a:hover {
+  background-color: #C5F4E0;
+  color: #white;
+  border-radius: 5px;
+}
+
+.topnav a.active {
+  background-color: #006E90;
+  color: #white;
+  border-radius: 0px;
+}
+
+.topnav a:visited {
+/*ADD INFO HERE FOR VISITED LINK*/
+}
+
+/* App info and airport image */
+
+#app {
+  width: auto;
+  margin:auto;
+  padding: 30px;
+  background:#ADCAD6;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+
+}
+
+#app img {
+    float: right;
+    margin: -95px 0px 15px 0px;
+}
+
+#testimonials {
+  width: auto;
+  margin:auto;
+  padding: 30px;
+  background:#006E90;
+  color: white;
+  font-size: 15px;
+  text-align: right;
+
+}
+
+#testimonials img {
+    float: left;
+    margin: -95px 0px 15px 0px;
+}
+
+
+/* Make Contact button a blue, remove link underline and add pale blue color to envelope*/
+.contact{
+  text-align: center;
+}
+
+a{
+  color: #006E90;
+  text-decoration: none;
+}
+
+i{
+  color: #ADCAD6;
+}
+
+a:hover {
+  color: #41BBD9
+}
+
+/* Font Awesome brand class, colors of social media icons */
+.fab {
+  color: #ADCAD6;
+}
+
+/* Change the color of social media icons only on hover */
+.fab:hover {
+  color: #006E90; /* Blue */
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Hamburger Menu - appears when resized to 650px on the right side of the page */
+.hamburger,
+.close {
+  display:none;
+}
+
+@media (max-width:650px) {
+ 	.hamburger,
+  .close {
+    font-size: 50px;
+    display:block;
+    text-align:right;
+    padding: 5%;
+ 	  }
+
+    .close {
+    font-size: 30px;
+    }
+
+    .main-nav {
+      position:fixed;
+      top: -100vh;
+    }
+
+  .main-nav.open-nav {
+   top: auto;
+   right: 10px;
+	 padding: 0% 10%;
+	 z-index: 2;
+	 background: #41BBD9;
+	 width: 40%;
+	 height: 45vh;
+  }
+
+  .main-nav a {
+  	color: white;
+  }
+}
